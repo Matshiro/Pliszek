@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root{
-  width: 100dvh;
+  height: 100dvh;
   @apply bg-black;
 }
 
