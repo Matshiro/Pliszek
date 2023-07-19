@@ -13,4 +13,7 @@ W produkcji, ale funkcjonalność będzie jak w normalnym twitterze:
 -Itp.
 
 
+## Zasoby:
+
+
 Icon by [Raj Dev](https://freeicons.io/profile/714) on [freeicons.io](https://freeicons.io)
