@@ -3,9 +3,13 @@ Oto moja tania podróbka Twittera o nazwie ptaka który nawala ogonkiem - plisze
 ## Informacje
 
 W produkcji, ale funkcjonalność będzie jak w normalnym twitterze:
+
 -Rejestracja/Logowanie
+
 -Wysyłanie tweetów (Tutaj pliszek)
+
 -Obserwowanie innych
+
 -Itp.
 
 
