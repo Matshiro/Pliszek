@@ -18,7 +18,7 @@ function Sidebar() {
       icon: BsBellFill,
     },
     {
-      label: "Profile",
+      label: "Profil",
       href: "/users/123",
       icon: FaUser,
     },
