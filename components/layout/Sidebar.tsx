@@ -8,12 +8,12 @@ import SidebarTweetButton from "./SidebarTweetButton";
 function Sidebar() {
   const items = [
     {
-      label: "Home",
+      label: "Główna",
       href: "/",
       icon: BsHouseFill,
     },
     {
-      label: "Notifications",
+      label: "Powiadomienia",
       href: "/notifications",
       icon: BsBellFill,
     },
@@ -37,7 +37,7 @@ function Sidebar() {
               icon={item.icon}
             />
           ))}
-          <SidebarItem onClick={() => {}} icon={BiLogOut} label="Logout"/>
+          <SidebarItem onClick={() => {}} icon={BiLogOut} label="Wyloguj"/>
           <SidebarTweetButton />
         </div>
       </div>
