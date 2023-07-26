@@ -1,5 +1,6 @@
 import Form from "@/components/Form";
 import Header from "@/components/Header";
+import CommentFeed from "@/components/posts/CommentFeed";
 import PostItem from "@/components/posts/PostItem";
 import usePost from "@/hooks/usePost";
 import { useRouter } from "next/router";
@@ -29,6 +30,7 @@ function PostView() {
         isComment
         placeholder="Pliszkuj swoją odpowiedź"
       />
+      <CommentFeed comments={fetchedPost?.comments} />
     </>
   );
 }

@@ -7,6 +7,7 @@ import { useCallback, useState } from "react";
 import { toast } from "react-hot-toast";
 import Button from "./Button";
 import Avatar from "./Avatar";
+import usePost from "@/hooks/usePost";
 
 interface FormProps {
   placeholder: string;
@@ -19,6 +20,7 @@ function Form({ placeholder, isComment, postId }: FormProps) {
   const loginModal = useLoginModal();
   const { data: currentUser } = useCurrentUser();
   const { mutate: mutatePosts } = usePosts();
+  const { mutate: mutatePost } = usePost(postId as string);
 
   const [body, setBody] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -26,16 +28,20 @@ function Form({ placeholder, isComment, postId }: FormProps) {
   const onSubmit = useCallback(async () => {
     try {
       setIsLoading(true);
-      await axios.post("/api/posts", { body });
+
+      const url = isComment ? `/api/comments?postId=${postId}` : "/api/posts";
+
+      await axios.post(url, { body });
       toast.success("Pliszek dodany");
       setBody("");
       mutatePosts();
+      mutatePost();
     } catch (error) {
       toast.error("Coś poszło nie tak");
     } finally {
       setIsLoading(false);
     }
-  }, [body, mutatePosts]);
+  }, [body, mutatePosts, isComment, postId, mutatePost]);
 
   return (
     <div className="border-b-[1px] border-neutral-800 px-5 py-2">
