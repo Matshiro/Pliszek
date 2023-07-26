@@ -1,5 +1,7 @@
 Oto moja tania podróbka Twittera o nazwie ptaka który nawala ogonkiem - pliszek.
 
+Strona dostępna na: https://pliszek.vercel.app/
+
 ## Informacje
 
 W produkcji, ale funkcjonalność będzie jak w normalnym twitterze:
@@ -12,8 +14,6 @@ W produkcji, ale funkcjonalność będzie jak w normalnym twitterze:
 
 -Itp.
 
-
 ## Zasoby:
-
 
 Icon by [Raj Dev](https://freeicons.io/profile/714) on [freeicons.io](https://freeicons.io)
